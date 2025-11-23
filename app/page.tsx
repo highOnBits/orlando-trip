@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { DayTimeline } from "@/components/day-timeline"
 import { ExpenseDialog } from "@/components/expense-dialog"
 import { WeatherDialog } from "@/components/weather-dialog"
+import { getImagePath } from "@/lib/utils"
 
 export default function Home() {
   const [selectedDay, setSelectedDay] = useState<number | null>(null)
@@ -20,7 +21,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/orlando-universal-studios-theme-park-at-night-with.jpg')`,
+            backgroundImage: `url('${getImagePath('/orlando-universal-studios-theme-park-at-night-with.jpg')}')`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background/95" />
@@ -110,8 +111,8 @@ export default function Home() {
                       style={{
                         backgroundImage:
                           day === 1
-                            ? `url('/disney-springs-at-night-with-fountains-and-lights.jpg')`
-                            : `url('/universal-islands-of-adventure-hogwarts-castle-at-.jpg')`,
+                            ? `url('${getImagePath('/disney-springs-at-night-with-fountains-and-lights.jpg')}')`
+                            : `url('${getImagePath('/universal-islands-of-adventure-hogwarts-castle-at-.jpg')}')`,
                       }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
