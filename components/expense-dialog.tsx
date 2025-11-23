@@ -15,7 +15,7 @@ export function ExpenseDialog({ open, onOpenChange }: ExpenseDialogProps) {
   const day1Uber = 8.75 + 7.5 // Two Uber rides split by 4
 
   // Day 2 expenses per person
-  const day2Ticket = 248 // Universal IOA ticket
+  const day2Ticket = 185 // Universal IOA ticket
   const day2Food = 15 + 40 + 20 // Butterbeer + Lunch + Flex block
   const day2Uber = 8.75 // Morning Uber split by 4
 

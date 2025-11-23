@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { TimelineEvent } from "@/components/timeline-event"
 import { useRef } from "react"
+import { getImagePath } from "@/lib/utils"
 
 const day1Events = [
   {
@@ -16,7 +17,7 @@ const day1Events = [
     transport: "🚕 Uber",
     cost: "$8.75",
     isShared: true,
-    backgroundImage: "/orlando-airport-road-view.jpg",
+    backgroundImage: getImagePath("/orlando-airport-road-view.jpg"),
   },
   {
     time: "12:30 PM - 3:00 PM",
@@ -27,7 +28,7 @@ const day1Events = [
     transport: "🚶 Walk / 🚋 Trolley",
     cost: "$25 per person",
     isShared: false,
-    backgroundImage: "/icon-park-orlando-daytime-restaurants.jpg",
+    backgroundImage: getImagePath("/icon-park-orlando-daytime-restaurants.jpg"),
   },
   {
     time: "3:00 PM - 4:00 PM",
@@ -37,7 +38,7 @@ const day1Events = [
     details: "Recharge for the evening adventures",
     transport: "🚶 Short walk back",
     cost: "",
-    backgroundImage: "/modern-hotel-room-orlando-resort.jpg",
+    backgroundImage: getImagePath("/modern-hotel-room-orlando-resort.jpg"),
   },
   {
     time: "4:45 PM - 6:00 PM",
@@ -48,7 +49,7 @@ const day1Events = [
     transport: "🚶 Walk / 🚋 Trolley",
     cost: "$30 per person",
     isShared: false,
-    backgroundImage: "/icon-park-ferris-wheel-sunset-orlando.jpg",
+    backgroundImage: getImagePath("/icon-park-ferris-wheel-sunset-orlando.jpg"),
   },
   {
     time: "6:00 PM - 9:30 PM",
@@ -59,7 +60,7 @@ const day1Events = [
     transport: "🚕 Uber (~15-25 min)",
     cost: "$50 per person",
     isShared: false,
-    backgroundImage: "/disney-springs-night-lights-holiday-decorations.jpg",
+    backgroundImage: getImagePath("/disney-springs-night-lights-holiday-decorations.jpg"),
   },
   {
     time: "9:30 PM - 10:00 PM",
@@ -70,7 +71,7 @@ const day1Events = [
     transport: "🚕 Uber (~15-25 min)",
     cost: "$7.50",
     isShared: true,
-    backgroundImage: "/orlando-night-street-lights.jpg",
+    backgroundImage: getImagePath("/orlando-night-street-lights.jpg"),
   },
 ]
 
@@ -84,7 +85,7 @@ const day2Events = [
     transport: "🚕 Uber",
     cost: "$8.75",
     isShared: true,
-    backgroundImage: "/universal-orlando-citywalk-entrance-morning.jpg",
+    backgroundImage: getImagePath("/universal-orlando-citywalk-entrance-morning.jpg"),
   },
   {
     time: "9:00 AM - 10:10 AM",
@@ -94,7 +95,7 @@ const day2Events = [
     details: "If huge wait, swap with VelociCoaster",
     transport: "",
     cost: "",
-    backgroundImage: "/hagrids-motorbike-adventure-universal-ride.jpg",
+    backgroundImage: getImagePath("/hagrids-motorbike-adventure-universal-ride.jpg"),
   },
   {
     time: "10:15 AM - 10:40 AM",
@@ -104,7 +105,7 @@ const day2Events = [
     details: "Indoor headliner • Magical experience",
     transport: "",
     cost: "",
-    backgroundImage: "/hogwarts-castle-universal-islands-of-adventure.jpg",
+    backgroundImage: getImagePath("/hogwarts-castle-universal-islands-of-adventure.jpg"),
   },
   {
     time: "10:50 AM - 11:25 AM",
@@ -114,7 +115,7 @@ const day2Events = [
     details: "Free ride-time lockers • Try Single Rider",
     transport: "",
     cost: "",
-    backgroundImage: "/velocicoaster-universal-orlando-blue-coaster.jpg",
+    backgroundImage: getImagePath("/velocicoaster-universal-orlando-blue-coaster.jpg"),
   },
   {
     time: "11:30 AM - 12:10 PM",
@@ -125,7 +126,7 @@ const day2Events = [
     transport: "",
     cost: "$15 per person",
     isShared: false,
-    backgroundImage: "/hogsmeade-village-universal-butterbeer-shops.jpg",
+    backgroundImage: getImagePath("/hogsmeade-village-universal-butterbeer-shops.jpg"),
   },
   {
     time: "12:15 PM - 1:00 PM",
@@ -136,7 +137,7 @@ const day2Events = [
     transport: "",
     cost: "$40 per person",
     isShared: false,
-    backgroundImage: "/three-broomsticks-restaurant-hogsmeade-interior.jpg",
+    backgroundImage: getImagePath("/three-broomsticks-restaurant-hogsmeade-interior.jpg"),
   },
   {
     time: "1:10 PM - 1:45 PM",
@@ -146,7 +147,7 @@ const day2Events = [
     details: "Mostly indoors • Single Rider option",
     transport: "",
     cost: "",
-    backgroundImage: "/skull-island-king-kong-universal-orlando.jpg",
+    backgroundImage: getImagePath("/skull-island-king-kong-universal-orlando.jpg"),
   },
   {
     time: "1:55 PM - 2:30 PM",
@@ -156,7 +157,7 @@ const day2Events = [
     details: "Single Rider when posted",
     transport: "",
     cost: "",
-    backgroundImage: "/spiderman-ride-universal-islands-of-adventure.jpg",
+    backgroundImage: getImagePath("/spiderman-ride-universal-islands-of-adventure.jpg"),
   },
   {
     time: "2:35 PM - 3:10 PM",
@@ -166,7 +167,7 @@ const day2Events = [
     details: "Metal detectors + lockers required",
     transport: "",
     cost: "",
-    backgroundImage: "/incredible-hulk-coaster-green-universal-orlando.jpg",
+    backgroundImage: getImagePath("/incredible-hulk-coaster-green-universal-orlando.jpg"),
   },
   {
     time: "3:15 PM - 5:00 PM",
@@ -177,7 +178,7 @@ const day2Events = [
     transport: "",
     cost: "$20 per person",
     isShared: false,
-    backgroundImage: "/placeholder.svg?height=400&width=600",
+    backgroundImage: getImagePath("/placeholder.svg?height=400&width=600"),
   },
   {
     time: "5:00 PM - Close",
@@ -187,7 +188,7 @@ const day2Events = [
     details: "Magical atmosphere • Lap on Hulk if skipped earlier",
     transport: "",
     cost: "",
-    backgroundImage: "/placeholder.svg?height=400&width=600",
+    backgroundImage: getImagePath("/placeholder.svg?height=400&width=600"),
   },
   {
     time: "Optional",
@@ -197,7 +198,7 @@ const day2Events = [
     details: "Poncho/lockers recommended • Best on warm evenings",
     transport: "",
     cost: "",
-    backgroundImage: "/placeholder.svg?height=400&width=600",
+    backgroundImage: getImagePath("/placeholder.svg?height=400&width=600"),
   },
 ]
 
@@ -234,7 +235,7 @@ export function DayTimeline({ day, onBack }: DayTimelineProps) {
     })
 
     if (day === 2) {
-      total += 248
+      total += 185
     }
 
     return total
@@ -353,7 +354,7 @@ export function DayTimeline({ day, onBack }: DayTimelineProps) {
             </ul>
             <div className="mt-3 md:mt-4 pt-3 md:pt-4 border-t border-border/50">
               <p className="text-xs md:text-sm text-muted-foreground">
-                <strong className="text-foreground">Day 2 includes:</strong> Universal Islands of Adventure ticket ($248
+                <strong className="text-foreground">Day 2 includes:</strong> Universal Islands of Adventure ticket ($185
                 per person) + food & activities
               </p>
             </div>
