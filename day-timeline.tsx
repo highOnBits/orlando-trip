@@ -235,7 +235,7 @@ export function DayTimeline({ day, onBack }: DayTimelineProps) {
     })
 
     if (day === 2) {
-      total += 248
+      total += 185
     }
 
     return total
@@ -354,7 +354,7 @@ export function DayTimeline({ day, onBack }: DayTimelineProps) {
             </ul>
             <div className="mt-3 md:mt-4 pt-3 md:pt-4 border-t border-border/50">
               <p className="text-xs md:text-sm text-muted-foreground">
-                <strong className="text-foreground">Day 2 includes:</strong> Universal Islands of Adventure ticket ($248
+                <strong className="text-foreground">Day 2 includes:</strong> Universal Islands of Adventure ticket ($185
                 per person) + food & activities
               </p>
             </div>
